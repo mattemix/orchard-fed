@@ -1,8 +1,6 @@
 import './Header.scss'
 
 function Header() {
-
-
     return (
         <header className="main-header container-fluid" >
           <div className="d-flex align-items-center container">

@@ -5,17 +5,12 @@ import Slider1Component from './Slider1Component'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
-
 interface Props  {
     slides: any;
 }
 
-
-
 export class Slider1 extends React.Component<Props> {
     
-
     render() {
         let settings = {
             className: "content-slider-1",
@@ -41,14 +36,13 @@ export class Slider1 extends React.Component<Props> {
             <Slider {...settings}>
                 {this.props.slides && this.props.slides.map((slide: any, i: any) => {
               
-                    return <Slider1Component data={slide} />
+                    return <Slider1Component key={i} data={slide} />
                 })}
             </Slider>
         </div>
     )
             }
 }
-
 
 function NextArrow(props: any) {
     const { onClick } = props;
