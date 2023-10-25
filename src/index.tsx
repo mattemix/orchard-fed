@@ -16,6 +16,7 @@ async function rederApp(): Promise<any> {
 
   let settingsServices = SettingsService.getInstance();
   settingsServices.setComponent1(content.component1);
+  settingsServices.setComponent2(content.component2);
   wireApplication();
   const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
