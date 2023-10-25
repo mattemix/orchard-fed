@@ -13,7 +13,7 @@ export class Slider1 extends React.Component<Props> {
     
     render() {
         let settings = {
-            className: "content-slider-1",
+            className: 'content-slider-1',
             dots: true,
             arrows: true,
             infinite: true,
@@ -32,10 +32,8 @@ export class Slider1 extends React.Component<Props> {
         }
         return (
         <div>
-
             <Slider {...settings}>
                 {this.props.slides && this.props.slides.map((slide: any, i: any) => {
-              
                     return <Slider1Component key={i} data={slide} />
                 })}
             </Slider>
@@ -47,8 +45,8 @@ export class Slider1 extends React.Component<Props> {
 function NextArrow(props: any) {
     const { onClick } = props;
     return (
-        <a onClick={onClick} className="slick-arrow slick-next">
-            <FontAwesomeIcon icon={faChevronRight} color="red" style={{ color: "#1aafad", width: "15px", height: "25px", marginLeft: "10px" }} size="1x" />
+        <a onClick={onClick} className='slick-arrow slick-next'>
+            <FontAwesomeIcon icon={faChevronRight} color='red' style={{ color: '#1aafad', width: '15px', height: '25px', marginLeft: '10px' }} size='1x' />
         </a>
     )
 }
@@ -56,8 +54,8 @@ function NextArrow(props: any) {
 function PrevArrow(props: any) {
     const { onClick } = props;
     return (
-        <a onClick={onClick} className="slick-arrow slick-prev">
-            <FontAwesomeIcon icon={faChevronLeft} style={{ color: "#1aafad", width: "15px", height: "25px", marginTop: "-15px", marginLeft: "12px" }} color="red" size="1x" />
+        <a onClick={onClick} className='slick-arrow slick-prev'>
+            <FontAwesomeIcon icon={faChevronLeft} style={{ color: '#1aafad', width: '15px', height: '25px', marginTop: '-15px', marginLeft: '12px' }} color='red' size='1x' />
         </a>
     )
 }

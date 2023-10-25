@@ -3,15 +3,18 @@
         {
             "image1": {
                 "image": "../assets/images/component-01/Image-01.jpg",
+                "image2x":"../assets/images/component-01/Image-01@2x.jpg",
                 "alt": "father and son"
             },
             "image2": {
                 "image": "../assets/images/component-01/Image-02.jpg",
+                "image2x":"../assets/images/component-01/Image-02@2x.jpg",
                 "alt": "Mixed Veggies"
             },
             "image3": {
-                "alt": "asparagus",
-                "image": "../assets/images/component-01/Image-03.jpg"
+                "image": "../assets/images/component-01/Image-03.jpg",
+                "image2x":"../assets/images/component-01/Image-03@2x.jpg",
+                "alt": "asparagus"
             },
             "content": {
                 "title": "ANSWER YOUR BODY'S NEEDS",
