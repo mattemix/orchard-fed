@@ -1,10 +1,8 @@
 import React from 'react';
-import { Modal } from 'react-bootstrap';
 
 interface Props {
     data: any;
 }
-
 
 export class BlogThumbnailComponent extends React.Component<Props> {
     render() {

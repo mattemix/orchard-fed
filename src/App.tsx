@@ -9,6 +9,7 @@ import './assets/css/slick.css'
 import './assets/css/slick-theme.css'
 import './assets/css/slick-animation.css'
 import './assets/css/animate.min.css'
+import Footer from './Footer/Footer';
 
 export class App extends Component {
   render() {
@@ -23,6 +24,7 @@ export class App extends Component {
             <BlogThumbnail slides={content2} />
           </div>
         </div>
+        <Footer />
       </React.Fragment>
     );
   }
