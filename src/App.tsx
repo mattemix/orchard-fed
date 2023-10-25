@@ -1,26 +1,28 @@
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Slider1 from './Slider/Slider1';
+import Header from './Header/Header';
+import './App.scss'
+import './assets/css/slick.css'
+import './assets/css/slick-theme.css'
+import './assets/css/slick-animation.css'
+import './assets/css/animate.min.css'
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+       <Header />
+      <div className='container'>
+        <div className='row'>
+        <Slider1 />
+        </div>
+      </div>
+      </React.Fragment>
   );
 }
 
+
+
 export default App;
+

@@ -1,0 +1,13 @@
+.main-header {
+    background-color: #1bafad;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    position: relative;
+    min-height: 90px;
+    display: block;
+    .container {
+        height: 90px;
+    }
+  }
